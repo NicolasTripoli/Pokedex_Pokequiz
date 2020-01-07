@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- MyCSS -->
+    <link rel="stylesheet" href="css/pokequiz.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Botões de Ativar Musica e de Ir para o Quiz -->
+        <div class="row justify-content-center">
+
+            <!-- Botão de troca de pagina -->
+            <div class="col">
+                <img id="Pokedex" src="src/img/Pokedex.png" alt="Pokebola com quiz escrito">
+            </div>
+
+            <!-- Botão do volume -->
+            <div class="col d-flex flex-row-reverse">
+
+                <img id="Volume" src="src/svg/volume-up.svg" alt="Music On">
+
+                <audio id="cry" style="display: none">
+                    <source src="src/sounds/cry/1.wav" type="audio/mpeg">
+                </audio>
+
+                <audio id="music" style="display: none">
+                    <source src="src/sounds/music/pokquiz.mp3" type="audio/mpeg">
+                </audio>
+
+            </div>
+
+        </div>
+
+        <!-- Menu Inicial -->
+        <div id="menu">
+
+            <div class="row justify-content-md-center">
+                <img src="src/img/PokequizGame.png" alt="Pokequiz bem grande" id="Menu">
+            </div>
+
+            <div class="row justify-content-md-center" id="opcoes">
+                <!-- Botão de normal game -->
+                <button id="normal" type="button" class="btn btn-primary btn-lg">
+                    <h4>Normal Game</h4>
+                </button>
+                <!-- Botão de Jogo "Infinito"(300 rodadas) -->
+                <button id="infinity" type="button" class="btn btn-primary btn-lg">
+                    <h4>Infinity Game</h4>
+                </button>
+
+            </div>
+        </div>
+
+        <div id="Quiz">
+            <!-- Select Para Selecionar o pokemon -->
+            <div class="row justify-content-center">
+                <div id="Miniaturas" class="float-rigth">
+
+                </div>
+            </div>
+
+            <div class="row justify-content-center" id="rodadas">
+                <h3 id="rodada"></h3>
+            </div>
+
+            <!-- Pergunta -->
+            <div id="Perguntas">
+                <div class="row justify-content-center" id="Qep">
+
+                    <img src="src/img/Quemeessepokemon.png" alt="Quem é esse pokemon?">
+
+                </div>
+
+                <!-- Slider do pokemon sorteado -->
+                <div class="row justify-content-center">
+
+                    <div id="Carrocel" class="carousel slide" data-ride="carousel" data-interval="2000"
+                        data-pause="false">
+
+                        <div id="ImgPoke" class="carousel-inner justify-content-center">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row justify-content-center" id="respostas">
+
+
+                </div>
+
+            </div>
+
+            <div id="Resultados">
+                <img src="src/img/Pontuacao.png" alt="Sua pontuação foi de">
+                <br />
+                <h1 id="Pontuacao"></h1>
+                <div id="botoes" class="row justify-content-center">
+                    <button id="JogarNovo" type="button" class="btn btn-primary btn-lg">
+                        <h4>Jogar Novamente</h4>
+                    </button>
+                    <button onclick="Menu()" type="button" class="btn btn-primary btn-lg">
+                        <h4>Menu</h4>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Mundial -->
+    <script src="js/javascript.js"></script>
+    <!-- Pokequiz JS -->
+    <script src="js/pokequiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+</body>
+
+</html>

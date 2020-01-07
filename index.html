@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>PokeMaster</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Icone -->
+    <link rel = "shortcut icon" type = "imagem/x-icon" href = "src/img/icon.png"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- MyStyle -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Div principal com um container fluid(pega a tela inteira na width) -->
+    <div class="container-fluid">
+
+        <!-- Audio(onde se encontra a musica que é dado o play quando a img é clicada) -->
+        <audio id="init" style="display: none">
+
+            <source src="src/sounds/music/init.mp3" type="audio/mpeg">
+        
+        </audio>
+
+        <!-- Alinha todos so conteudos dentro dessa div em uma linha unica -->
+        <div class="row justify-content-md-center">
+            <!-- Imagem do lado esquerdo  -->
+            <div id="PokedexA" class="col-md-2">
+                <img src="src/img/p1.png" alt="Pokedex Lateral Esquedo">
+            </div>
+
+            <!-- Parte do meio da tela -->
+            <div id="Tela" class="d-flex justify-content-center align-items-center">
+                <!-- Imagem da pokebola para animação de entrada -->
+                <img id="PokemonImg" src="src/img/pokeall.png" alt="Pokeball">
+
+                <!-- Iframe, onde é contido a outra pagina -->
+                <iframe id="Tela2" src="" width="" height="" scrolling="yes">
+                    Seu navegador não suporta Iframe
+                </iframe>
+
+            </div>
+
+            <!-- Imagem do lado direito -->
+            <div id="PokedexB" class="col-md-2">
+
+                <img class="float-right" src="src/img/p2.png" alt="Pokedex Lateral Direita">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- MyScript -->
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
